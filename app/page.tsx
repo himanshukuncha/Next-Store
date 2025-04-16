@@ -1,12 +1,18 @@
-import Image from "next/image";
+import LoadingContainer from "@/components/global/LoadingContainer";
+import FeaturedProducts from "@/components/home/FeaturedProducts";
+import Hero from "@/components/home/Hero";
+import React, { Suspense } from "react";
 
-import Navbar from "@/components/navbar/Navbar";
-
-export default function Home() {
+const Home = () => {
   return (
-    <div>
-  <h1>home</h1>
-    
-    </div>
+    <>
+      <Hero />
+      {/* <LoadingContainer /> */}
+      <Suspense fallback={<LoadingContainer />}>
+        <FeaturedProducts />
+      </Suspense>
+    </>
   );
-}
+};
+
+export default Home;
