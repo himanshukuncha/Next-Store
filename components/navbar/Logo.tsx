@@ -7,7 +7,7 @@ const Logo = () => {
   return (
     <Button asChild size={"icon"}>
       <Link href="/">
-        <VscCode className="w-6 h-6" />
+        <VscCode className="w-6 h-6 text-white" />
       </Link>
     </Button>
   );

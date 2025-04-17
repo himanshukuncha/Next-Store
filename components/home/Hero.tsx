@@ -16,7 +16,7 @@ const Hero = () => {
           exercitationem ipsa vitae tempore voluptate expedita corrupti aperiam
           earum unde quasi eveniet.
         </p>
-        <Button asChild className="mt-10" size="lg">
+        <Button asChild className="mt-10 text-white" size="lg">
           <Link href="/products">Our Products</Link>
         </Button>
       </div>
