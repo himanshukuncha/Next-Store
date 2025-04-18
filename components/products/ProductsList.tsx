@@ -31,8 +31,8 @@ function ProductsList({ products }: { products: Product[] }) {
                     <h2 className="text-xl font-semibold capitalize">
                       {name}
                     </h2>
-                    <h4 className="text-xl text-muted-foreground">{company}</h4>
-                    <h5 className="text-sm text-muted-foreground mt-2">{description}</h5>
+                    <h4 className="text-muted-foreground">{company}</h4>
+                    
                   </div>
                   <p className="text-muted-foreground text-lg md:ml-auto flex-1/5 text-right">
                     {dollarsAmount}
