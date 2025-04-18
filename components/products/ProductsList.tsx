@@ -28,11 +28,8 @@ function ProductsList({ products }: { products: Product[] }) {
                   </div>
 
                   <div className="flex-3/5">
-                    <h2 className="text-xl font-semibold capitalize">
-                      {name}
-                    </h2>
+                    <h2 className="text-xl font-semibold capitalize">{name}</h2>
                     <h4 className="text-muted-foreground">{company}</h4>
-                    
                   </div>
                   <p className="text-muted-foreground text-lg md:ml-auto flex-1/5 text-right">
                     {dollarsAmount}
@@ -41,7 +38,7 @@ function ProductsList({ products }: { products: Product[] }) {
               </Card>
             </Link>
             <div className="absolute bottom-8 right-8 z-5">
-              <FavoriteToggleButton productId={productId} />
+              <FavoriteToggleButton />
             </div>
           </article>
         );
