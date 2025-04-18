@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { fetchAllProducts } from "@/app/utils/actions";
 import Link from "next/link";
-import { Divide, Heading5 } from "lucide-react";
+// import { Divide, Heading5 } from "lucide-react";
 
 const ProductsContainer = async ({
   search,
