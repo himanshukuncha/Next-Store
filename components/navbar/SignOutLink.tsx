@@ -1,7 +1,21 @@
-import React from "react";
+"use client";
 
-const SignOutLink = () => {
-  return <div><h1>SignOutLink</h1></div>;
-};
+import { SignOutButton } from "@clerk/nextjs";
+import { toast } from "sonner";
+import Link from "next/link";
+
+function SignOutLink() {
+  const handleLogout = () => {
+    toast("Logging out...");
+  };
+
+  return (
+    <SignOutButton>
+      <Link href="/" className="w-full text-left" onClick={handleLogout}>
+        Logout
+      </Link>
+    </SignOutButton>
+  );
+}
 
 export default SignOutLink;
